@@ -8,32 +8,88 @@
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="./css/style.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Frontend Mentor | Results summary component</title>
 </head>
-<body>
-    Your Result
-    76
-    of 100
+<body class="font-hanken bg-gray-100 py-8">
 
-    Great
-    You scored higher than 65% of the people who have taken these tests.
-    
-    Summary
+    <section class="w-[90%] max-w-md mx-auto bg-white shadow-2xl shadow-black">
 
-    Reaction
-    80 / 100
+        <article class="bg-gradient-to-b from-light-slate-blue to-light-royal-blue rounded-b-2xl p-10 text-white text-center">
+            
+            <p class="text-xl font-bold text-light-lavender">Your Result</p>
 
-    Memory
-    92 / 100
+            <div class="w-36 aspect-square bg-gradient-to-b from-violet-blue to-persian-blue rounded-full mx-auto my-8 grid content-center">
 
-    Verbal
-    61 / 100
+                <p class="text-5xl font-bold mb-2">76</p>
+                <p class="font-bold text-light-lavender">of 100</p>
 
-    Visual
-    72 / 100
+            </div>
 
-    Continue
+            <h3 class="text-3xl mb-4 font-bold">Great</h3>
+            <p class="text-light-lavender">You scored higher than 65% of the people who have taken these tests.</p>
+
+        </article>
+
+        <article class="p-10 grid gap-6">
+
+            <h3 class="text-xl font-bold">Summary</h3>
+
+            <div class="bg-light-red/5 rounded-xl py-5 px-6 flex item-center">
+
+                <img src="./assets/images/icon-reaction.svg" alt="">
+
+                <p class="ml-3 text-lg text-light-red">Reaction</p>
+
+                <p class="ml-auto font-bold text-dark-gray-blue">
+                    80
+                    <span class="text-dark-gray-blue/70">/ 100</span>
+                </p>
+            </div>
+
+            <div class="bg-orangey-yellow/5 rounded-xl py-5 px-6 flex item-center">
+
+                <img src="./assets/images/icon-memory.svg" alt="">
+
+                <p class="ml-3 text-lg text-orangey-yellow">Memory </p>
+
+                <p class="ml-auto font-bold text-dark-gray-blue">
+                    92
+                    <span class="text-dark-gray-blue/70">/ 100</span>
+                </p>
+            </div>
+
+            <div class="bg-green-teal/5 rounded-xl py-5 px-6 flex item-center">
+
+                <img src="./assets/images/icon-verbal.svg" alt="">
+
+                <p class="ml-3 text-lg text-green-teal">Verbal</p>
+
+                <p class="ml-auto font-bold text-dark-gray-blue">
+                    80
+                    <span class="text-dark-gray-blue/70">/ 100</span>
+                </p>
+            </div>
+
+            <div class="bg-violet-blue/5 rounded-xl py-5 px-6 flex item-center">
+
+                <img src="./assets/images/icon-visual.svg" alt="">
+
+                <p class="ml-3 text-lg text-violet-blue">Visual</p>
+
+                <p class="ml-auto font-bold text-dark-gray-blue">
+                    80
+                    <span class="text-dark-gray-blue/70">/ 100</span>
+                </p>
+            </div>
+
+            <a href="#" class="bg-dark-gray-blue text-white text-center py-5 rounded-full font-bold hover:bg-gradient-to-b from-light-slate-blue to-light-royal-blue">Continue<a>
+
+        </article>
+
+    </section>
 
 </body>
 </html>
